@@ -1,0 +1,29 @@
+{
+    "project_info": {
+      "project_number": "400814918274",
+      "project_id": "database-firebase-af2d8",
+      "storage_bucket": "database-firebase-af2d8.firebasestorage.app"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:400814918274:android:f7e374306139696098029b",
+          "android_client_info": {
+            "package_name": "com.zacky.database_firebase"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyDx2chszE-MgWYeO3vk9MIsY2RRgTAqqxk"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
