@@ -11,6 +11,8 @@ class _TambahDataState extends State<TambahData> {
   TextEditingController nimController = TextEditingController();
   TextEditingController namaController = TextEditingController();
   TextEditingController prodiController = TextEditingController();
+  TextEditingController kelasController = TextEditingController();
+
 
   void addData() {
     DocumentReference documentReference = FirebaseFirestore.instance
@@ -20,7 +22,8 @@ class _TambahDataState extends State<TambahData> {
     Map<String, dynamic> mhs = {
       "nim": nimController.text,
       "nama": namaController.text,
-      "prodi": prodiController.text
+      "prodi": prodiController.text,
+      "kelas": kelasController.text
     };
 
     documentReference.set(mhs).whenComplete(() => print('${nimController.text} created'));
@@ -58,6 +61,10 @@ class _TambahDataState extends State<TambahData> {
             TextFormField(
               controller: prodiController,
               decoration: InputDecoration(labelText: "Prodi"),
+            ),
+            TextFormField(
+              controller: kelasController,
+              decoration: InputDecoration(labelText: "kelas"),
             ),
             SizedBox(height: 50),
             ElevatedButton(
